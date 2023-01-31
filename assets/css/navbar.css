@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    background-color: rgb(241, 118, 36);
+    height: 7vh;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav .left-side-nav{
+    padding-left: 90px;
+}
+
+nav .right-side-nav{
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav div ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .right-side-nav a{
+    background-color: white;
+    color: rgb(241, 118, 36);
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+nav div .active{
+    font-weight: bold;
+}

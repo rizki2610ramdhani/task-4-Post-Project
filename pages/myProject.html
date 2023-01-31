@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project | My Blog</title>
+
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/myProject.css">
+
+</head>
+<body>
+    
+    <nav>
+        <div class="left-side-nav">
+            <img src="../assets/images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myProject.html" class="active">My Project</a></li>
+            </ul>
+        </div>
+        <div class="right-side-nav">
+            <a href="contactMe.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Add My Project</h1>
+        <form onsubmit="getData(event)" name="project">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" />
+            <div class="time">
+                <div class="start">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" />
+                </div>
+                <div class="end">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" />
+                </div>
+            </div>
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+            <label for="technology">Technologies</label>
+            <div class="technology">
+                <input type="checkbox" name="technologi" value="PHP"><label for="php">PHP</label>
+                <input type="checkbox" name="technologi" value="Java"><label for="java">Java</label>
+                <input type="checkbox" name="technologi" value="Laravel"><label for="laravel">Laravel</label>
+                <input type="checkbox" name="technologi" value="MySQL"><label for="mysql">MySQL</label>
+            </div>
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" />
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div class="project-card" id="contents">
+        <h3>No Project Here</h3>    
+    </div>
+
+      <script src="../assets/js/myProject.js"></script>
+</body>
+</html>

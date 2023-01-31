@@ -1,0 +1,43 @@
+.container{
+    margin: 40px auto;
+    width: 500px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+
+.container form label{
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.container form input, .container form select, .container form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 0;
+    border: 1px solid #c4c4c4;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    height: 35px;
+}
+
+.container form textarea{
+    resize: none;
+    height: 100px;
+}
+
+.container form button{
+    background-color: rgb(241, 118, 36);
+    color: white;
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 15px;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
